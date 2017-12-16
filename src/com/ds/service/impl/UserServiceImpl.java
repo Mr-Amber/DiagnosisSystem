@@ -88,7 +88,7 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User getUser(int id) {
+    public User getUser(String id) {
         return User.dao.findById(id);
     }
 
@@ -98,12 +98,12 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public boolean deleteUserById(int id) {
+    public boolean deleteUserById(String id) {
         return User.dao.deleteById(id);
     }
 
     @Override
-    public UserVO modifyInfo(int id, String uname, int gender, int age, String medicalHisory, String symptom, int type) {
+    public UserVO modifyInfo(String id, String uname, int gender, int age, String medicalHisory, String symptom, int type) {
         User user =  User.dao.modifyInfoById(id, uname, gender, age, medicalHisory, symptom, type);
         return new UserVO(UserResult.SUCCESS, user);
     }

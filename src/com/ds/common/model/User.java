@@ -29,7 +29,7 @@ public class User extends BaseUser<User> {
         return user.save();
     }
 
-    public User modifyInfoById(int id, String uname, int gender, int age, String medicalHisory, String symptom, int type) {
+    public User modifyInfoById(String id, String uname, int gender, int age, String medicalHisory, String symptom, int type) {
         User user = new User().findById(id);
         user.setUname(uname);
         user.setGender(gender);
