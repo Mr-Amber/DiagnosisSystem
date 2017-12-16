@@ -1,0 +1,4 @@
+*.iml
+.idea/*
+WebRoot/WEB-INF/classes/*
+src/res/a_little_config.properties
