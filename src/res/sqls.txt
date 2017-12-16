@@ -1,0 +1,4 @@
+showMessageNums     = select count(*) as count from message where pid =?
+searchMessages      = select * from message where sender_id =? and receiver_id =? and pid =? order by time DESC
+searchPhotos        = select * from photo where uid =? and did =? and tid =? order by upload_date DESC
+searchSymtoms       = select * from symptom_type where uper_id =?

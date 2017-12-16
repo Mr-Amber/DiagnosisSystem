@@ -1,0 +1,51 @@
+Table: message
+------------+--------------+------+-----+---------+---------
+ Field      | Type         | Null | Key | Default | Remarks 
+------------+--------------+------+-----+---------+---------
+ mid        | VARCHAR(30)  | NO   | PRI |         | 消息id    
+ sender_id  | VARCHAR(30)  | YES  |     |         | 发送用户id  
+ receive_id | VARCHAR(30)  | YES  |     |         | 接收用户id  
+ pid        | VARCHAR(30)  | YES  |     |         | 照片id    
+ content    | VARCHAR(100) | YES  |     |         | 消息内容    
+ time       | DATETIME(19) | YES  |     |         | 消息发送时间  
+------------+--------------+------+-----+---------+---------
+
+Table: photo
+-------------+--------------+------+-----+---------+---------
+ Field       | Type         | Null | Key | Default | Remarks 
+-------------+--------------+------+-----+---------+---------
+ pid         | VARCHAR(50)  | NO   | PRI |         |         
+ uid         | VARCHAR(50)  | YES  |     |         |         
+ did         | VARCHAR(30)  | YES  |     |         | 医生id    
+ tid         | VARCHAR(30)  | YES  |     |         | 照片对应症状类型id（刚上传时为空，由医生判定类别后添加）
+ position    | VARCHAR(100) | YES  |     |         | 照片地址    
+ photo_type  | INT(10)      | YES  |     |         | 照片类型    
+ upload_date | DATETIME(19) | YES  |     |         | 上传日期    
+ time        | INT(10)      | YES  |     |         | 拍摄时间段（0-早，1-中，2-晚）
+-------------+--------------+------+-----+---------+---------
+
+Table: symptom_type
+-------------+--------------+------+-----+---------+---------
+ Field       | Type         | Null | Key | Default | Remarks 
+-------------+--------------+------+-----+---------+---------
+ tid         | VARCHAR(30)  | NO   | PRI |         | 分类id    
+ uper_id     | VARCHAR(30)  | YES  |     |         | 母分类id   
+ tname       | VARCHAR(50)  | YES  |     |         | 分类名称    
+ description | VARCHAR(255) | YES  |     |         | 分类详细描述  
+-------------+--------------+------+-----+---------+---------
+
+Table: user
+-----------------+--------------+------+-----+---------+---------
+ Field           | Type         | Null | Key | Default | Remarks 
+-----------------+--------------+------+-----+---------+---------
+ uid             | VARCHAR(50)  | NO   | PRI |         | 用户ID    
+ uname           | VARCHAR(30)  | YES  |     |         | 用户姓名    
+ gender          | INT(10)      | YES  |     |         | 用户性别（0代表男，1代表女）
+ age             | INT(10)      | YES  |     |         | 用户年龄    
+ medical_history | VARCHAR(100) | YES  |     |         | 病史      
+ symptom         | VARCHAR(100) | YES  |     |         | 最近症状    
+ type            | INT(10)      | YES  |     |         | 用户类型（0表示用户，1表示医生）
+ account         | VARCHAR(255) | YES  |     |         |         
+ passwd          | VARCHAR(255) | YES  |     |         | 用户表     
+-----------------+--------------+------+-----+---------+---------
+
