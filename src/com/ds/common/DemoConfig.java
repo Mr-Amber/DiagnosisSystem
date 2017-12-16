@@ -13,6 +13,7 @@ import com.jfinal.core.JFinal;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.Sqls;
+import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.template.Engine;
 
@@ -75,11 +76,14 @@ public class DemoConfig extends JFinalConfig {
 	 */
 	public void configPlugin(Plugins me) {
 		// 配置C3p0数据库连接池插件
-		DruidPlugin druidPlugin = createDruidPlugin();
+		DruidPlugin druidPlugin = new DruidPlugin(PropKit.get("jdbcUrl"),
+				PropKit.get("user","root"), PropKit.get("password",""));
 		me.add(druidPlugin);
 		
 		// 配置ActiveRecord插件
 		ActiveRecordPlugin arp = new ActiveRecordPlugin(druidPlugin);
+		arp.setShowSql(PropKit.getBoolean("devMode", false));
+		arp.setDialect(new MysqlDialect());
 		// 所有映射在 MappingKit 中自动化搞定
 		_MappingKit.mapping(arp);
 		me.add(arp);
