@@ -26,7 +26,7 @@ public class IsAutoLoginInterceptor implements Interceptor {
 			if (user==null) {
 				String id = controller.getCookie("userId");
 				if (id!=null && isNumeric(id)) {// auto login
-					user= UserServiceImpl.getInstance().getUser(Integer.parseInt(id));
+					user= UserServiceImpl.getInstance().getUser(id);
 					if (user.getType()!=1) {
 						backToIndex(controller);
 						return;
