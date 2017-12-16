@@ -15,10 +15,10 @@ public class BlogController extends Controller {
 //
 //	static BlogService service = new BlogService();
 //
-//	public void index() {
+	public void index() {
 //		setAttr("blogPage", service.paginate(getParaToInt(0, 1), 10));
-//		render("blog.html");
-//	}
+		render("blog.html");
+	}
 //
 //	public void add() {
 //	}
