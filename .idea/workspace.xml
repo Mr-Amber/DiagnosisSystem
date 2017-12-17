@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31f7b4d4-7b91-4e72-b8c6-5909efb20821" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/c-rt.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/c.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/fmt-rt.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/fmt.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/jstl.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/lib/standard.jar" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/sql-rt.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/sql.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/x-rt.tld" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/x.tld" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/DiagnosisSystem.iml" afterPath="$PROJECT_DIR$/DiagnosisSystem.iml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/res/a_little_config.properties" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/res/a_little_config.properties" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index/CategoryManagement.html" afterPath="$PROJECT_DIR$/WebRoot/index/html/CategoryManagement.html" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index/FurPhotoGallery.html" afterPath="$PROJECT_DIR$/WebRoot/index/html/FurPhotoGallery.html" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index/NoReplyPhoto.html" afterPath="$PROJECT_DIR$/WebRoot/index/html/NoReplyPhoto.html" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index/Photodetail.html" afterPath="$PROJECT_DIR$/WebRoot/index/html/Photodetail.html" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/index/RepliedPhoto.html" afterPath="$PROJECT_DIR$/WebRoot/index/html/RepliedPhoto.html" />
-      <change beforePath="$PROJECT_DIR$/src/com/ds/common/DemoConfig.java" afterPath="$PROJECT_DIR$/src/com/ds/common/DemoConfig.java" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/index/Photodetail.jsp" afterPath="$PROJECT_DIR$/WebRoot/index/Photodetail.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/index/html/Photodetail.html" afterPath="$PROJECT_DIR$/WebRoot/index/html/Photodetail.html" />
       <change beforePath="$PROJECT_DIR$/src/res/a_little_config.properties" afterPath="$PROJECT_DIR$/src/res/a_little_config.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
@@ -49,10 +30,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoReplyPhoto.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NoReplyPhoto.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebRoot/index/NoReplyPhoto.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
+            <state relative-caret-position="2071">
               <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -61,21 +42,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FurPhotoGallery.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/index/FurPhotoGallery.jsp">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="167" column="68" lean-forward="true" selection-start-line="164" selection-start-column="56" selection-end-line="167" selection-end-column="68" />
+            <state relative-caret-position="57">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlogController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ds/blog/BlogController.java">
+      <file leaf-file-name="FurPhotoGallery.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/index/FurPhotoGallery.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="296">
+              <caret line="161" column="54" lean-forward="true" selection-start-line="161" selection-start-column="54" selection-end-line="161" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photodetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/index/html/Photodetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="277" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Photodetail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/index/Photodetail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="125" column="52" lean-forward="false" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepliedPhoto.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/index/RepliedPhoto.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="144" column="30" lean-forward="false" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepliedPhoto.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/index/html/RepliedPhoto.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -139,8 +160,9 @@
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebRoot/index/FurPhotoGallery.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/index/CategoryManagement.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/index/Photodetail.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/index/NoReplyPhoto.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/index/Photodetail.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/index/RepliedPhoto.jsp" />
       </list>
     </option>
   </component>
@@ -251,6 +273,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WebRoot/index/html" />
       <recent name="$PROJECT_DIR$/WebRoot/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/WebRoot/WEB-INF" />
     </key>
@@ -367,12 +390,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513441807810</updated>
-      <workItem from="1513441808988" duration="7648000" />
+      <workItem from="1513441808988" duration="9121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7648000" />
+    <option name="totallyTimeSpent" value="9121000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -388,7 +411,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -398,7 +421,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -431,14 +454,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/js/vendors/bootstrap/dist/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -499,14 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/index/html/Photodetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="16" column="54" lean-forward="false" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///private/var/folders/y2/_b54c5550dv9w6jkxrjdh2100000gn/T/modules.uml">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -525,14 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -609,14 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/index/Photodetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/index/CategoryManagement.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -635,21 +626,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/index/FurPhotoGallery.jsp">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="167" column="68" lean-forward="true" selection-start-line="164" selection-start-column="56" selection-end-line="167" selection-end-column="68" />
+        <state relative-caret-position="-1913">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/index/NoReplyPhoto.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="2071">
           <caret line="109" column="51" lean-forward="false" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index/FurPhotoGallery.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="161" column="54" lean-forward="true" selection-start-line="161" selection-start-column="54" selection-end-line="161" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index/html/Photodetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="277" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index/Photodetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="125" column="52" lean-forward="false" selection-start-line="125" selection-start-column="52" selection-end-line="125" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index/html/RepliedPhoto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="280" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/index/RepliedPhoto.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="144" column="30" lean-forward="false" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

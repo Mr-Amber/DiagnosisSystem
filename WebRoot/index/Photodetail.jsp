@@ -1,4 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--舌苔照片详情查看 包括回复和打标签--%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +10,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>舌苔查看 </title>
 
     <!-- Bootstrap -->
-    <link href="../js/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../js/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../js/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="../js/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="../js/build/css/custom.min.css" rel="stylesheet">
+    <link href="../build/css/custom.min.css" rel="stylesheet">
 </head>
 
 <body class="nav-md">
@@ -40,6 +42,7 @@
                     </div>
                     <div class="profile_info">
                         <span>欢迎您,</span>
+                        <%--@Todo 医生--%>
                         <h2>医生</h2>
                     </div>
                 </div>
@@ -53,7 +56,7 @@
                         <ul class="nav side-menu">
                             <li class="active"><a><i class="fa fa-photo"></i>全部照片</a>
                             </li>
-                            <li><a><i class="fa fa-comment-o"></i> 未回复</span></a>
+                            <li><a><i class="fa fa-comment-o"></i> 未回复</a>
                             </li>
                             <li><a><i class="fa fa-comments-o"></i>已回复</a>
                             </li>
@@ -77,47 +80,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <%--@Todo 医生名--%>
                                 <img src="images/img.jpg" alt="">医生
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                <%--@Todo 退出登录跳转--%>
                                 <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i>退出登陆</a></li>
-                            </ul>
-                        </li>
-
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">2</span>
-                            </a>
-                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                                        <span>
-                        <span>新的舌苔照片</span>
-                        <span class="time">3 mins ago</span>
-                      </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                                        <span>
-                        <span>新的舌苔照片</span>
-                        <span class="time">12 mins ago</span>
-                      </span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <div class="text-center">
-                                        <a>
-                                            <strong>查看所有未回复照片</strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -143,19 +112,18 @@
                             <div class="x_content">
 
                                 <div class="col-md-7 col-sm-7 col-xs-12">
+                                    <%--@Todo 用户上传的所有照片 尚未写点击缩略图并展示详情的部分--%>
                                     <div class="product-image">
+                                        <%--@Todo 大图根据缩略图的响应--%>
                                         <img src="images/prod-1.jpg" alt="..." />
                                     </div>
                                     <div class="product_gallery">
-                                        <a>
-                                            <img src="images/prod-2.jpg" alt="...">
-                                        </a>
-                                        <a>
-                                            <img src="images/prod-3.jpg" alt="...">
-                                        </a>
-                                        <a>
-                                            <img src="images/prod-4.jpg" alt="...">
-                                        </a>
+                                        <c:forEach items="${photos}" var="photo">
+                                            <a>
+                                                <%--@Todo 缩略图地址--%>
+                                                <img src="images/prod-2.jpg" alt="...">
+                                            </a>
+                                        </c:forEach>
                                     </div>
                                 </div>
 
@@ -174,7 +142,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <br /><br />
+                                        <br />
                                         <div class="form-group">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">二级分类</label>
                                             <div class="col-md-9 col-sm-9 col-xs-12">
@@ -185,6 +153,12 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <br />
+                                        <br />
+                                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-8">
+                                            <button class="btn btn-round btn-primary" type="reset">提交分类选择</button>
+                                        </div>
+
                                     </form>
                                     <div class="">
                                         <br /><br />
@@ -229,6 +203,14 @@
                                                 </li>
                                             </ul>
                                         </div>
+                                        <label for="message"></label>
+                                        <div class="ln_solid"></div>
+                                        <label for="message">添加回复</label>
+                                        <textarea id="message" required="required" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.." data-parsley-validation-threshold="10"></textarea>
+                                        <br />
+                                        <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-5">
+                                            <span class="btn btn-primary">添加回复</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -251,15 +233,15 @@
 </div>
 
 <!-- jQuery -->
-<script src="../js/vendors/jquery/dist/jquery.min.js"></script>
+<script src="../vendors/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="../js/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="../js/vendors/fastclick/lib/fastclick.js"></script>
+<script src="../vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
-<script src="../js/vendors/nprogress/nprogress.js"></script>
+<script src="../vendors/nprogress/nprogress.js"></script>
 
 <!-- Custom Theme Scripts -->
-<script src="../js/build/js/custom.min.js"></script>
+<script src="../build/js/custom.min.js"></script>
 </body>
 </html>
