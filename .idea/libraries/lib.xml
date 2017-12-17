@@ -6,6 +6,8 @@
       <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/log4j-1.2.16.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jfinal-3.3-bin-with-src.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.44-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebRoot/WEB-INF/lib/standard.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

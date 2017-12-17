@@ -1,5 +1,5 @@
 
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
@@ -14,7 +14,6 @@
             </div>
             <div class="profile_info">
                 <span>欢迎您,</span>
-                <%--@Todo 医生--%>
                 <h2>医生</h2>
             </div>
         </div>
