@@ -6,6 +6,12 @@ import com.ds.vo.SymptomVO;
 import com.jfinal.plugin.activerecord.Page;
 
 public class SymptomServiceImpl implements SymptomService {
+    private static SymptomServiceImpl instance = new SymptomServiceImpl();
+    private SymptomServiceImpl(){}
+
+    public static SymptomServiceImpl getInstance(){
+        return instance;
+    }
     @Override
     public Page<SymptomType> getRootSymptom(SymptomVO symptomVO) {
         return null;
@@ -25,4 +31,5 @@ public class SymptomServiceImpl implements SymptomService {
     public boolean modifySymptom(String tid, SymptomType symptomType) {
         return false;
     }
+
 }
