@@ -2,6 +2,7 @@ package com.ds.common;
 
 import com.ds.blog.BlogController;
 import com.ds.common.model._MappingKit;
+import com.ds.controller.MainController;
 import com.ds.index.IndexController;
 import com.jfinal.config.Constants;
 import com.jfinal.config.Handlers;
@@ -10,24 +11,26 @@ import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
+import com.jfinal.json.FastJsonFactory;
 import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.activerecord.Sqls;
 import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.druid.DruidPlugin;
+import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
 
 /**
  * 本 ds 仅表达最为粗浅的 jfinal 用法，更为有价值的实用的企业级用法
  * 详见 JFinal 俱乐部: http://jfinal.com/club
- * 
+ *
  * API引导式配置
  */
 public class DemoConfig extends JFinalConfig {
-	
+
 	/**
 	 * 运行此 main 方法可以启动项目，此main方法可以放置在任意的Class类定义中，不一定要放于此
-	 * 
+	 *
 	 * 使用本方法启动过第一次以后，会在开发工具的 debug、run config 中自动生成
 	 * 一条启动配置，可对该自动生成的配置再添加额外的配置项，例如 VM argument 可配置为：
 	 * -XX:PermSize=64M -XX:MaxPermSize=256M
@@ -43,7 +46,7 @@ public class DemoConfig extends JFinalConfig {
 		 */
 		 JFinal.start("WebRoot", 8080, "/");
 	}
-	
+
 	/**
 	 * 配置常量
 	 */
@@ -52,13 +55,16 @@ public class DemoConfig extends JFinalConfig {
 		PropKit.use("res/a_little_config.properties");
 		Sqls.load("res/sqls.txt");
 		me.setDevMode(PropKit.getBoolean("devMode", false));
+        me.setViewType(ViewType.JSP);
+        me.setEncoding("utf-8");
+        me.setJsonFactory(new FastJsonFactory()); // using fast json libs
 	}
-	
+
 	/**
 	 * 配置路由
 	 */
 	public void configRoute(Routes me) {
-		me.add("/", IndexController.class, "/index");	// 第三个参数为该Controller的视图存放路径
+		me.add("/", MainController.class, "/index");	// 第三个参数为该Controller的视图存放路径
 		me.add("/blog", BlogController.class);			// 第三个参数省略时默认与第一个参数值相同，在此即为 "/blog"
 	}
 	

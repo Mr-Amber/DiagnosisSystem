@@ -1,18 +1,43 @@
 package com.ds.controller;
 
+import com.ds.common.model.Photo;
 import com.ds.common.model.User;
 import com.ds.interceptor.IsLoginInterceptor;
 import com.ds.interceptor.IsNotLoginInterceptor;
 import com.ds.interceptor.validator.LoginValidator;
 import com.ds.interceptor.validator.RegisterValidator;
+import com.ds.service.PhotoService;
 import com.ds.service.UserService;
+import com.ds.service.impl.PhotoServiceImpl;
 import com.ds.service.impl.UserServiceImpl;
+import com.ds.vo.PhotoVO;
 import com.ds.vo.UserVO;
 import com.jfinal.aop.Before;
 import com.jfinal.core.Controller;
+import com.jfinal.plugin.activerecord.Page;
 
 public class MainController extends Controller {
     private UserService userService = UserServiceImpl.getInstance();
+    private PhotoService photoService = PhotoServiceImpl.getInstance();
+
+    public void index() {
+//        int page=getParaToInt("p", 1);
+        Page<Photo> photoPage = photoService.getPhotos(new PhotoVO());
+
+
+        int from = getFromPage(photoPage);
+
+        setAttr("photos", photoPage.getList());
+        setAttr("page", photoPage.getPageNumber());
+        setAttr("from", from);
+        setAttr("totalPage", photoPage.getTotalPage()==0?1:photoPage.getTotalPage());
+        setAttr("totalUser", photoPage.getTotalRow());
+        setAttr("isFirst", photoPage.isFirstPage());
+        setAttr("isLast", photoPage.isLastPage());
+
+
+        renderJsp("FurPhotoGallery.jsp");
+    }
 
     // =========================详细的方法=====================
     // 登录
@@ -118,5 +143,17 @@ public class MainController extends Controller {
 
     private User getLoggedUser() {
         return ((User) getSessionAttr("user"));
+    }
+
+    private int getFromPage(Page list) {
+        int from=1, max=list.getTotalPage(), now=list.getPageNumber();
+        if (max>5) {
+            if (now>=max-2) {
+                from=max-4;
+            } else if (now>3) {
+                from=now-2;
+            }
+        }
+        return from;
     }
 }

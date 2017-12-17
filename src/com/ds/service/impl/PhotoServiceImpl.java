@@ -21,4 +21,9 @@ public class PhotoServiceImpl implements PhotoService {
     public boolean modifyTIdByPId(String pid, String tid) {
         return Photo.dao.modifyTIdByPId(pid,tid);
     }
+
+    @Override
+    public Photo getPhotoByPId(String pid) {
+        return Photo.dao.getPhotoByPId(pid);
+    }
 }

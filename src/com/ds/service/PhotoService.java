@@ -10,4 +10,6 @@ public interface PhotoService {
     public Page<Photo> getPhotos(PhotoVO searchVO);
     /** 修改照片分类 */
     public boolean modifyTIdByPId(String pid, String tid);
+
+    public Photo getPhotoByPId(String pid);
 }

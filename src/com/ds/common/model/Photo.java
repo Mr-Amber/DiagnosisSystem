@@ -77,6 +77,10 @@ public class Photo extends BasePhoto<Photo> {
         photo.setTid(tid);
         return photo.update();
     }
+
+    public Photo getPhotoByPId(String pid) {
+        return dao.findById(pid);
+    }
 }
 
 
