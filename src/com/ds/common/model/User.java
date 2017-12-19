@@ -18,7 +18,8 @@ public class User extends BaseUser<User> {
 
     public User register(String account, String password, String uname, int gender, int age, String medicalHistory, String symptom, int type) {
         // 如果使用框架所带的做法调用update()，无法使用mysql的md5()函数，因此采取sql语句
-        int result = Db.update(Sqls.get("register"),account, password, uname, gender, age, medicalHistory, symptom, type);
+        int result = Db.update(Sqls.get("register"), account,account, password, uname, gender, age, medicalHistory, symptom, type);
+        System.out.println("register result:"+result);
         if (result!=0) {
             return dao.login(account, password);
         }

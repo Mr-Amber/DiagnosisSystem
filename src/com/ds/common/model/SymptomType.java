@@ -36,6 +36,8 @@ public class SymptomType extends BaseSymptomType<SymptomType> {
 		return page;
 	}
 
+
+
 	public boolean add(SymptomType symptomType){
 		return symptomType.save();
 	}

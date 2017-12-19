@@ -28,6 +28,7 @@ public class UserServiceImpl implements UserService{
         boolean isLog=(passwordAgain==null);
         User user = null;
         UserResult result = (isLog) ? verifyLogin(account, password) : verifyRegister(account, password, passwordAgain);
+
         if (result == UserResult.FORMAT_PASS) {
             user = (isLog) ? User.dao.login(account, password) :User.dao.register(account, password, uname, gender, age, medicalHistory, symptom, type);
             if (user == null) {

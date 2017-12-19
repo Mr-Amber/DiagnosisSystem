@@ -14,22 +14,26 @@ public class SymptomServiceImpl implements SymptomService {
     }
     @Override
     public Page<SymptomType> getRootSymptom(SymptomVO symptomVO) {
-        return null;
+        return SymptomType.dao.getRootSymptom(symptomVO);
     }
 
     @Override
+    public SymptomType getSymptomByTId(String tid) {
+        return SymptomType.dao.findById(tid);
+    }
+    @Override
     public boolean addSymptom(SymptomType symptomType) {
-        return false;
+        return SymptomType.dao.add(symptomType);
     }
 
     @Override
     public boolean deleteSymptomById(String tid) {
-        return false;
+        return SymptomType.dao.deleteSymptomById(tid);
     }
 
     @Override
     public boolean modifySymptom(String tid, SymptomType symptomType) {
-        return false;
+        return SymptomType.dao.update(tid, symptomType);
     }
 
 }

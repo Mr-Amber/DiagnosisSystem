@@ -24,7 +24,6 @@ public class MainController extends Controller {
 //        int page=getParaToInt("p", 1);
         Page<Photo> photoPage = photoService.getPhotos(new PhotoVO());
 
-
         int from = getFromPage(photoPage);
 
         setAttr("photos", photoPage.getList());

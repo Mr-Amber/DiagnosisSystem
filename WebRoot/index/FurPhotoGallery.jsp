@@ -16,6 +16,10 @@
     <link href="../js/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="../js/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../js/vendors/bootstrapvalidator/bootstrapValidator.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="../js/sweetalert.css" rel="stylesheet">
 
     <!-- Custom styling plus plugins -->
     <link href="../js/build/css/custom.min.css" rel="stylesheet">
@@ -86,8 +90,13 @@
 <script src="../js/vendors/fastclick/lib/fastclick.js"></script>
 <!-- NProgress -->
 <script src="../js/vendors/nprogress/nprogress.js"></script>
+<!-- NProgress -->
+<script src="../js/sweetalert.min.js"></script>
+<!-- NProgress -->
+<script src="../js/vendors/bootstrapvalidator/bootstrapValidator.min.js"></script>
 
 <!-- Custom Theme Scripts -->
 <script src="../js/build/js/custom.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
